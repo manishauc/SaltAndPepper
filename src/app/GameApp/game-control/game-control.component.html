@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-mg-12">
+            <button class="odd-btn btn-primary" (click)="startGenerating()" >START</button>
+            <button class="odd-btn btn-danger" (click)="stopGenerating()" >STOP</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-mg-12">
+          <div *ngFor="let evenNumber of evenNumbers" class="even-number">{{ evenNumber }}</div>
+        </div>
+      </div>
+</div>
